@@ -1,0 +1,56 @@
+.parent .one {
+    width: fit-content;
+    text-align: center;
+    background-color: aliceblue;
+    text-shadow: 0.5px 0.5px #9c27b0, 0.7px 0.7px#2196f3;
+}
+
+.two {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.three {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.four {
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.p1 {
+    background-color: grey;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+}
+
+.p2 {
+    margin: 10px;
+    background-color: grey;
+    padding: 10px;
+    width: 400px;
+}
+
+.p3 {
+    margin: 10px;
+    background-color: grey;
+    padding: 10px;
+    width: 400px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+a {
+    background-color: rgb(51, 190, 190);
+    border-bottom: 10px solid #155358;
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px auto;
+    width: fit-content;
+    /* line 53 +54 to center the element */
+    display: block;
+}

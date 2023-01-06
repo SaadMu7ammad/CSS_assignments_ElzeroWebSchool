@@ -1,0 +1,88 @@
+.parent div {
+    position: absolute;
+}
+
+.blue {
+    background-color: #03a9f4;
+    left: 20px;
+    top: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.black {
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    left: 20px;
+    top: 120px;
+    z-index: 100;
+}
+
+.green {
+    background-color: rgb(9, 143, 130);
+    width: 100px;
+    height: 100px;
+    z-index: 5;
+    left: 35px;
+    top: 35px;
+}
+
+.red {
+    background-color: #f44336;
+    width: 100px;
+    height: 100px;
+    left: 50px;
+    top: 50px;
+    z-index: 10;
+}
+
+hr {
+    margin-top: 150px;
+}
+
+.parent2 {
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue red;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}
+
+
+.parent2 .top-left {
+
+    background-color: green;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+
+}
+
+.parent2 .bottom-left {
+    position: absolute;
+    background-color: green;
+    bottom: 0;
+    left: 0;
+
+
+}
+
+.parent2 .top-right {
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    background-color: green;
+
+}
+
+.parent2 .bottom-right {
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    background-color: green;
+
+}

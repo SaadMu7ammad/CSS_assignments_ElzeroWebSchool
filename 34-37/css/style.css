@@ -1,0 +1,109 @@
+.parent div {
+    margin: 5px auto;
+    padding: 10px;
+    width: 300px;
+    height: 60px;
+}
+
+.parent .one {
+    background-color: aqua;
+}
+
+:empty {
+    background-color: red;
+}
+
+
+
+
+
+
+.parent2 {
+    background-color: rgb(146, 146, 12);
+    padding: 20px;
+    text-align: center;
+    margin: 10px auto;
+    width: fit-content;
+    position: relative;
+}
+
+.parent2::first-letter {
+    background-color: red;
+    margin-left: -29px;
+    position: absolute;
+    padding: 6px;
+    margin-top: -8px;
+    left: 0;
+    float: left;
+}
+
+
+
+
+.parent3 p::before {
+    content: attr(data-person);
+    width: 40px;
+    background-color: aqua;
+    position: absolute;
+    padding: 20px;
+    left: -110px;
+    top: 0;
+}
+
+
+.parent3 p {
+    background-color: rgb(30, 92, 216);
+    padding: 20px;
+    text-align: center;
+    margin: 10px auto;
+    width: 400px;
+    position: relative;
+    border-left: 10px;
+    border-left-color: rgb(209, 51, 156);
+    border-left-style: solid;
+}
+
+.parent3 p::after {
+    content: "";
+    /* width: 57px; */
+    height: 0px;
+    border-width: 15px;
+    border-color: #5d09c900 red #5edb0000 #0013f500;
+    /* background-color: black; */
+    border-style: solid;
+    position: absolute;
+    left: -31px;
+    top: 15px;
+    float: left;
+}
+
+
+.parent4 p {
+    background-color: burlywood;
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+    counter-increment: c;
+}
+
+.parent4 ::before {
+    content: counter(c);
+    background-color: aqua;
+    position: absolute;
+    width: 20px;
+    padding: 10px;
+    left: -40px;
+    top: 0px;
+}
+
+.parent4 ::after {
+    content: "";
+    background-color: aqua;
+    position: absolute;
+    width: 4px;
+    height: 36.3px;
+    padding: 1px;
+    left: 414px;
+    top: 0px;
+}

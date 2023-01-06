@@ -1,0 +1,117 @@
+@media print {
+    .parent>div {
+        font-size: 40px;
+        color: red;
+    }
+}
+
+
+.parent2 {
+    display: flex;
+    background-color: #eee;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.parent2 div {
+    background-color: red;
+    width: 100%;
+    margin-bottom: 5px;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    height: 100px;
+    color: white;
+    text-align: center;
+}
+
+/* mobile */
+@media (max-width:500px) {
+    .parent2 div {
+        width: calc(100%);
+        background-color: black;
+    }
+}
+
+/* med */
+@media (min-width:501px) {
+    .parent2 div {
+        width: calc(50% - 10px);
+        background-color: red;
+    }
+}
+
+/* large */
+@media (min-width:1200px) {
+    .parent2 div {
+        width: calc(25% - 20px);
+        background-color: #20a296;
+    }
+}
+
+
+.parent3 {
+    display: flex;
+    background-color: #eee;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.parent3 div {
+    background-color: red;
+    width: 200px;
+    margin-bottom: 5px;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    height: 100px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+/* mobile */
+@media (max-width:500px) {
+    .parent3 div {
+        width: calc(100% - 5px);
+        /* margin: calc(10px / 6); */
+        background-color: black;
+    }
+}
+
+/* med */
+@media (min-width:501px) {
+
+    /* .parent3>div {
+        width: calc(1);
+        background-color: red;
+    } */
+    .parent3>div {
+        width: calc(100% - 5px);
+        /* margin: calc(10px / 6); */
+        background-color: darkgoldenrod;
+    }
+
+    .parent3>div:not(:first-child) {
+        width: calc((100% / 3) - 15px);
+        background-color: darkgoldenrod;
+        /* margin: calc(10px / 6); */
+    }
+}
+
+/* large */
+@media (min-width:1200px) {
+
+
+    .parent3 div:first-child,
+    .parent3 div:last-child {
+        width: calc(100% - 5px);
+        background-color: blue;
+    }
+
+    .parent3 div:nth-child(2),
+    .parent3 div:nth-child(3) {
+        width: calc(50% - 15px);
+        background-color: blue;
+    }
+}

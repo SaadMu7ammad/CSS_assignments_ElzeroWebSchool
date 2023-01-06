@@ -1,0 +1,400 @@
+/* .parent div {
+    width: 100px;
+    height: 100px;
+    background-color: #e8e3e3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    border-radius: 50%;
+    border: 5px solid #e91e63;
+    transition: transform 0.3s;
+    border-left-color: transparent;
+    animation-name: spin;
+    animation-duration: 1s;
+     animation-iteration-count: infinite; 
+animation-timing-function: linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+*/
+.parent2 div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: 20px auto;
+    left: 50%;
+    border-radius: 50%;
+    border: 5px solid rgb(222, 222, 17);
+    transition: transform 0.3s;
+    border-left-color: transparent;
+    animation-direction: normal;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.parent2 div::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin: 20px auto;
+    left: 6%;
+    top: -15%;
+    border-radius: 50%;
+    border: 5px solid blue;
+    transition: transform 0.3s;
+    border-top-color: transparent;
+
+}
+
+.parent2 div::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin: 20px auto;
+    left: 15%;
+    top: -5%;
+    border-radius: 50%;
+    border: 5px solid palevioletred;
+    transition: transform 0.3s;
+    border-right-color: transparent;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.parent2 div:hover {
+    animation-play-state: paused;
+}
+
+
+.parent3 div {
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    margin: 20px auto;
+    left: 50%;
+    top: 30%;
+    border-radius: 50%;
+    border: 5px solid black;
+    transition: transform 0.3s;
+    border-bottom-color: transparent;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-name: spin;
+    animation-play-state: paused;
+
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.parent3 div::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin: 20px auto;
+    left: 6%;
+    top: -15%;
+    border-radius: 50%;
+    border: 5px solid orangered;
+    transition: transform 0.3s;
+    border-bottom-color: transparent;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+    animation-name: spin;
+    animation-play-state: paused;
+
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.parent3 div::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin: 20px auto;
+    left: 15%;
+    top: -5%;
+    border-radius: 50%;
+    border: 5px solid blue;
+    transition: transform 0.3s;
+    border-bottom-color: transparent;
+    animation-duration: 2s;
+    animation-direction: normal;
+
+
+    animation-timing-function: linear;
+    animation-play-state: paused;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.parent3 div:hover,
+.parent3 div:hover::before,
+.parent3 div:hover::after {
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-name: spin;
+}
+
+
+/* --------- */
+
+.parent4 span {
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    margin: 20px auto;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    border: 5px solid black;
+    transition: transform 0.3s;
+    border-bottom-color: transparent;
+    background-color: #eee;
+    animation-direction: reverse;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* CHALLENGE-------------- */
+.ch {
+    width: 250px;
+    height: 250px;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+    position: relative;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+.ch div {
+    padding: 5px;
+    display: grid;
+    background-color: darkblue;
+
+}
+
+.ch .one {
+    grid-row-start: 1;
+    grid-row-end: 8;
+    /* background-color: red; */
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.ch .two {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* background-color: black; */
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.ch .three {
+    grid-row-start: 7;
+    grid-row-end: 8;
+    /* background-color: green; */
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.ch .four {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    /* background-color: pink; */
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.ch .five {
+    grid-row-start: 1;
+    grid-row-end: 8;
+    /* background-color: blue; */
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+.ch .six {
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 5;
+    grid-column-end: 9;
+}
+
+/* E */
+.ch::after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: yellow;
+    position: absolute;
+    left: 97px;
+    top: 5px;
+    animation-name: E;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+}
+
+@keyframes E {
+    0% {
+        left: 97px;
+        top: 5px;
+    }
+
+    10% {
+        left: 0px;
+        top: 5px;
+    }
+
+    20% {
+        left: 0px;
+        top: 110px;
+    }
+
+
+    30% {
+        left: 97px;
+        top: 110px;
+    }
+
+
+    40% {
+        left: 0px;
+        top: 110px;
+    }
+
+
+    50% {
+        left: 0px;
+        top: 215px;
+    }
+
+
+    60% {
+        left: 97px;
+        top: 223px;
+    }
+
+
+    70% {
+        left: 0px;
+        top: 223px;
+    }
+
+
+    85% {
+        left: 0px;
+        top: 5px;
+    }
+
+
+    100% {
+        left: 97px;
+        top: 5px;
+
+    }
+
+
+}
+
+@keyframes hide {
+    0% {
+        opacity: 0;
+
+    }
+
+
+    5% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* L */
+.ch::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: yellow;
+    position: absolute;
+    left: 224px;
+    top: 223px;
+    animation-name: L, hide;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    opacity: 0;
+}
+
+@keyframes L {
+    0% {
+        left: 224px;
+        top: 223px;
+    }
+
+    50% {
+        left: 130px;
+        top: 223px;
+    }
+
+    100% {
+        left: 130px;
+        top: 5px;
+    }
+
+
+}

@@ -1,0 +1,215 @@
+.parent {
+    background-color: aliceblue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 20px auto;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    box-shadow: 10px 0px 0px red, -10px 0px 0px rgb(38, 0, 255);
+}
+
+.txt {
+    display: flex;
+    text-align: center;
+    align-self: center;
+    color: orange;
+}
+
+.parent2 {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 20px auto;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.parent2 div {
+    width: calc(95% / 3);
+    height: 40px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent3 {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.parent3 div {
+    display: flex;
+    background-color: rgb(74, 82, 226);
+    width: calc(95% / 3);
+    justify-content: center;
+    /* for the text inside div*/
+    align-items: center;
+    /* for the text inside div*/
+}
+
+.parent3 .one {
+    order: 6;
+    height: 30px;
+    align-self: flex-end;
+}
+
+.parent3 .two {
+    order: 5;
+}
+
+.parent3 .three {
+    order: 2;
+    height: 30px;
+}
+
+.parent3 .four {
+    order: 3;
+}
+
+.parent3 .five {
+    order: 4;
+}
+
+.parent3 .six {
+    order: 1;
+}
+
+.parent4 {
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.parent4 div {
+    background-color: aqua;
+    display: flex;
+    width: 50px;
+    height: calc(95% / 3);
+    justify-content: center;
+    align-items: center;
+}
+
+.parent4 .two {
+    display: flex;
+    width: 200px;
+    align-self: flex-start;
+}
+
+.parent5 {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: #eee;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.parent5 div {
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    height: calc(95% / 2);
+    background-color: blueviolet;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent5 .two {
+    align-self: flex-end;
+    order: 3;
+    background-color: green;
+}
+
+.parent5 .four {
+    align-self: flex-end;
+    order: 1;
+    background-color: blueviolet;
+}
+
+.parent5 .one {
+    order: 2;
+    background-color: orange;
+}
+
+.parent5 .three {
+    order: 4;
+    background-color: brown;
+}
+
+/* -------------------------- */
+
+.page {
+    background-color: #ccc;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo,
+.links {
+    display: flex;
+    background-color: rgb(156, 82, 82);
+    width: calc(100% /5);
+    margin: 10px;
+    padding: 10px;
+    justify-content: flex-start;
+}
+
+.links {
+    justify-content: flex-end;
+}
+
+.page .header li {
+    display: flex;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.page .main-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-area div {
+    background-color: rgb(25, 134, 184);
+    margin: 10px;
+    display: flex;
+    width: 200px;
+    height: 300px;
+    justify-content: space-between;
+}
+
+.page .footer {
+    display: flex;
+    background-color: aqua;
+    margin: 10px;
+    justify-content: space-between;
+    padding: 5px;
+}

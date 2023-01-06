@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(201, 201, 201);
+    color: rgb(0, 0, 0);
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    /* justify-content: center;
+    align-content: center; */
+    position: relative;
+}
+
+.grid div {
+    padding: 10px;
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    border-bottom: solid rgb(255, 111, 0);
+}
+
+h5 {
+    opacity: 50%;
+}
+
+.grid .one {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+.grid div::after {
+    content: "";
+    display: grid;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.grid .three {
+    display: grid;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: black;
+    color: white;
+}
+
+
+.grid .four {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+}
+
+.grid .five {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: black;
+    color: white;
+}
+
+.grid .six {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+}
+
+.grid .seven {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.grid .eight {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: black;
+    color: white;
+}
+
+.grid .nine {
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+}
+
+.grid .ten {
+    display: grid;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.parent div {
+    position: relative;
+}
+
+.parent .grid div::before {
+    content: "''";
+    position: absolute;
+    color: rgb(163, 27, 27);
+    transform: rotate(12deg);
+    font-size: 30px;
+    font-weight: bolder;
+    bottom: 0px;
+    right: 0px;
+
+}

@@ -1,0 +1,103 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+.parent div {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    color: rgb(16, 180, 174);
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.parent div::after {
+    content: " ";
+    width: 300px;
+    height: 200px;
+    position: absolute;
+
+    z-index: -3;
+    background-color: rgb(209, 16, 148);
+    transform: rotate(5deg);
+}
+
+.parent div::before {
+    content: " ";
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    z-index: -2;
+    background-color: rgb(8, 191, 237);
+    transform: rotate(-5deg);
+}
+
+.parent2 {
+    /* margin: 20px auto; */
+    /* position: relative; */
+
+}
+
+.parent2 div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* the above code for center the circle */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: larger;
+    /* border: solid; */
+    /* border-color: red red red white;
+    border-width: 10px; */
+}
+
+.parent2 div::after {
+    content: " ";
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: blue transparent blue blue;
+    width: calc(100%);
+    height: calc(100%);
+    border-width: 20px;
+    z-index: -3;
+    /* background-color: rgb(255, 255, 255); */
+    transition: .5s;
+    transition-delay: .05s;
+}
+
+.parent2 div::before {
+    border-radius: 50%;
+    border: solid;
+    border-width: 20px;
+    border-color: rgb(255, 0, 119) rgb(255, 0, 119) rgb(255, 0, 119) transparent;
+    content: " ";
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    position: absolute;
+    z-index: -3;
+    transition: .5s;
+    transition-delay: calc(.05s + 0.5s);
+}
+
+.parent2 div:hover::after {
+    transform: rotate(180deg);
+}
+
+.parent2 div:hover::before {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,70 @@
+.parent {
+    background-color: bisque;
+    margin: 15px auto;
+    padding: 10px;
+    list-style: none;
+    width: 400px;
+}
+.html,
+.css,
+.js {
+    background-color: blueviolet;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.html .names li {
+    list-style: decimal 10;
+    margin: 10px;
+    padding: 10px;
+    background-color: aqua;
+
+}
+.css .names li {
+    list-style-type: upper-roman;
+    margin: 10px;
+    padding: 10px;
+    background-color: aqua;
+
+}
+.js .names {
+    margin: 5px;
+}
+.js .names li {
+    list-style-type: square;
+    margin: 10px;
+    padding: 10px;
+    background-color: aqua;
+    list-style-position: inside;
+}
+
+table {
+    width: 700px;
+    background-color: rgb(175, 220, 12);
+    /* padding: 15px; */
+    margin: 10px auto;
+    border-color: blue;
+    border-style: solid;
+
+}
+
+table thead td {
+    background-color: rgb(74, 30, 115);
+    padding: 10px;
+    text-align: center;
+}
+
+table tbody td {
+    background-color: aquamarine;
+    margin: 10px;
+    padding: 10px;
+    border-spacing: 0px;
+}
+
+.sub {
+    background-color: brown;
+    margin-right: 5px;
+}
+
+.del {
+    background-color: green;
+}

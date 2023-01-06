@@ -1,0 +1,57 @@
+.parent {
+    background-color: rgb(21, 229, 229);
+    /* padding: 15px; */
+    width: 800px;
+    margin: 20px auto;
+}
+
+.row0,
+.row1,
+.row2,
+.row3 {
+    background-color: rgb(200, 113, 0);
+    padding: 10px 0px;
+    /* margin: 15px; */
+    margin-top: 15px;
+    margin-left: 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+.row0 {
+    width: calc(100% - 30px);
+}
+
+.row1 {
+    /* background-color: azure; */
+    width: calc((100% - 60px) / 3);
+}
+
+.row2 {
+    /* background-color: azure; */
+    width: calc((100% - 45px) / 2);
+}
+
+.row3 {
+    /* background-color: azure; */
+    width: calc((100% - 75px) / 4);
+    margin-bottom: 20px;
+}
+
+.parent2 div {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: aqua;
+    color: black;
+}
+
+.parent2 .one {
+    background-color: rgba(0, 255, 255, 0.1);
+}
+
+.parent2 .two {
+    opacity: 0.1;
+}

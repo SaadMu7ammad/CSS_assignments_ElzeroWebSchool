@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+.first {
+    width: 600px;
+    border-left: 5px solid orange;
+    border-right: 5px solid rgb(0, 153, 255);
+    /* align-items: center;
+    display: flex; cant use it because the ::first-letter wont work 
+    justify-content: center; */
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    background-color: aqua;
+}
+.first::first-letter {
+    content: " ";
+    color: rgb(221, 255, 0);
+
+}
+.first::before {
+    content: " ";
+    position: absolute;
+    height: 5px;
+    top: -5px;
+    left: -5px;
+    width: 600px;
+    background-image: linear-gradient(to right, orange 0%, orange 20%, rgb(80, 57, 15)20%, rgb(80, 57, 15)40%, red 40%, red 60%, green 60%, green 80%, rgb(0, 153, 255) 80%, rgb(0, 153, 255) 100%);
+}
+.first::after {
+    content: " ";
+    position: absolute;
+    height: 5px;
+    top: 18px;
+    left: -5px;
+    width: 600px;
+    background-image: linear-gradient(to right, orange 0%, orange 20%, rgb(80, 57, 15)20%, rgb(80, 57, 15)40%,
+            red 40%, red 60%, green 60%, green 80%, rgb(0, 153, 255) 80%, rgb(0, 153, 255) 100%);
+}
+
+div {
+    position: relative;
+    width: 600px;
+    margin: 10px auto;
+}
+
+input {
+    display: block;
+    height: 50px;
+    background-color: #eee;
+    width: 600px;
+    border: none;
+    position: relative;
+    caret-color: red;
+}
+div::after {
+    content: " ";
+    position: absolute;
+    width: 600px;
+    height: 2px;
+    top: 48px;
+    left: 0px;
+    background-image: linear-gradient(to right, orange 0%, orange 50%,
+            rgb(0, 153, 255) 50%, rgb(0, 153, 255) 100%);
+}
+input:focus {
+    outline: none;
+}

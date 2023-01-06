@@ -1,0 +1,59 @@
+.parent div {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border-width: 5px;
+  outline-style: solid;
+  outline-color: black;
+  outline-width: 5px;
+  text-align: center;
+  line-height: 100px;
+
+}
+
+.assign-2-shape-1 {
+  border-style: solid;
+  border-color: red;
+
+}
+
+.assign-2-shape-2 {
+  border-style: solid;
+  border-color: blue green;
+
+}
+
+.assign-2-shape-3 {
+  border-style: dashed;
+  border-color: red green blue yellow;
+
+}
+
+.bars div {
+  background-color: rgb(234, 230, 226);
+  margin: 10px;
+  width: 400px;
+  padding: 10px;
+  outline-width: 5px;
+  outline-color: rgb(234, 230, 226);
+  outline-style: solid;
+}
+
+.s1 {
+  border-left: 12px;
+  border-style: none none none solid;
+  border-width: 3px;
+
+}
+
+.s3 {
+  border-left: 12px;
+  border-style: none none none solid;
+  border-width: 3px;
+  border-color: aqua;
+}
+
+.s2 {
+  visibility: hidden;
+}
